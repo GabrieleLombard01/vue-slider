@@ -17,15 +17,16 @@
 </head>
 <body>
     <div id="root">
-        <div class="carousel">
-            <div class="carousel-item" v-for="(item, index) in images" :key="index">
-              <img :src="item.image" :alt="item.title" />
-              
-            </div>
-            <div class="carousel-controls">
-              <button @click="prevSlide">Prev</button>
-              <button @click="nextSlide">Next</button>
-            </div>
+      <div id="carousel">
+        <i class="bi bi-arrow-left-circle" id="prev"></i>
+        <div class="gallery">
+         <img src="pictures [currentIndex]" alt="landscape 1" class="active"> 
+        </div>
+        <i class="bi bi-arrow-right-circle" id="next"></i> 
+    </div>
+    <div id="thumbnails">
+        <img v-for="pic in pictures" src="pic" alt="landscape 1" class=""> 
+    </div>
           </div>
 
        
