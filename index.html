@@ -17,7 +17,18 @@
 </head>
 <body>
     <div id="root">
-        
+        <div class="carousel">
+            <div class="carousel-item" v-for="(item, index) in images" :key="index">
+              <img :src="item.image" :alt="item.title" />
+              
+            </div>
+            <div class="carousel-controls">
+              <button @click="prevSlide">Prev</button>
+              <button @click="nextSlide">Next</button>
+            </div>
+          </div>
+
+       
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body>
