@@ -1,32 +1,27 @@
-/*CSS reset*/
-*{  
+/* CSS reset */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*PSEUDO-CLASSES
+
+/* Custom properties */
+
+/* Pseudo-classes */
 #carousel .fa-solid:hover{
-    color: rgb(0, 0, 0);
+    color: greenyellow;
     text-shadow: white;
-}*/
+}
 
-/*Generics
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-/*Utilties
-.container{
-    padding: 1rem;
-    margin: 100px auto 100px auto;
-    max-width: 1000px;
-    border-radius: 20px;
-}*/
+/* Generics */
 
-/*Carousel content
+/* Utilities */
+
+/* Carousel content */
 #carousel{
     position: relative;
+    width: 800px;
+    margin: 50px auto;
 }
 #carousel .gallery{
     height: 70vh;
@@ -56,45 +51,25 @@ img {
     translate: 0 -50%;
     color: white;
     cursor: pointer;
+}
 
-}*/
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-  }
-  
-  .carousel-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+/* Carousel GRID */
+#grid-carous{
+    width: 800px;
+    height: 100px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+#grid-carous img{
     height: 100%;
-    display: none;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
+    width: 25%;
     object-fit: cover;
-  }
-  
-  .carousel-item h2,
-  .carousel-item p {
-    color: #fff;
-    text-align: center;
-  }
-  
-  .carousel-controls {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .carousel-controls button {
-    padding: 5px 10px;
-    margin: 0 5px;
-  }
-  
+    border-radius: 5px;
+    filter: grayscale(1);
+}
+#grid-carous img.active {
+    filter: grayscale(0);
+}

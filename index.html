@@ -4,33 +4,22 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carousel</title>
     <!--TODO Font Awesome -->
     <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!--Style -->
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--?Style -->
 	<link rel="stylesheet" href="css/style.css" />
-    <!-- Javascript -->
-    <script defer src="js/script.js"></script> 
-</head>
-<body>
-    <div id="root">
-      <div id="carousel">
-        <i class="bi bi-arrow-left-circle" id="prev"></i>
-        <div class="gallery">
-         <img src="pictures [currentIndex]" alt="landscape 1" class="active"> 
-        </div>
-        <i class="bi bi-arrow-right-circle" id="next"></i> 
-    </div>
-    <div id="thumbnails">
-        <img v-for="pic in pictures" src="pic" alt="landscape 1" class=""> 
-    </div>
-          </div>
-
-       
-    </div>
+    <!--! VueJS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Vue-Carousel</title>
+</head>
+
+<body>
+    <div id="root" class="container">
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html
