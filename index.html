@@ -26,6 +26,10 @@
             </div>
             <i class="fa-solid fa-circle-chevron-right fa-2xl" id="right-btn" @click="nextImage"></i>
         </div>
+         <!--! GRID-CAROUSEL: -->
+         <div id="grid-carous">
+            <img v-for="(image, index) in images" :src="image.src" :alt="image.alt" :key="index" :class="{ active: index === currentIndex }">
+        </div>
     </div>
 
     <script src="js/script.js"></script>
