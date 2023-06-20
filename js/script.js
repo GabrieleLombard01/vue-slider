@@ -43,6 +43,14 @@ const app = Vue.createApp({
               ], 
     }
   },
+  methods: {
+    nextImage() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    },
+    prevImage() {
+      this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+    }
+  }
 })
 
 app.mount('#root');
